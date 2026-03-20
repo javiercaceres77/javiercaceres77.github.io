@@ -1,1 +1,65 @@
-Javier's page on github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World - javiercaceres77</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0d1117; /* GitHub dark mode bg */
+            color: #58a6ff; /* A nice code blue */
+            font-family: 'Courier New', Courier, monospace;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            margin: 0;
+            text-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: clamp(10px, 3vw, 20px);
+            height: clamp(2rem, 5vw, 4rem);
+            background-color: #58a6ff;
+            margin-left: 10px;
+            animation: blink 1s step-end infinite;
+        }
+
+        p {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: #8b949e;
+            margin-top: 1rem;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>&gt; Hello World<span class="cursor"></span></h1>
+        <p>System Online. Awaiting Instructions_</p>
+    </div>
+</body>
+</html>
